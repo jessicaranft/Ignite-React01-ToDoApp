@@ -1,0 +1,30 @@
+.taskItem {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.6rem;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  font-size: 1.4rem;
+}
+
+.taskItem button {
+  background: none;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.taskItem .deleteIcon {
+  color: var(--gray-300);
+  transition: color .2s;
+}
+
+.taskItem .deleteIcon:hover {
+  color: var(--red-500);
+}
